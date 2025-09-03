@@ -6,6 +6,6 @@ Greencart is a full-stack e-commerce web application built using the MERN stack.
 
 ![image alt](https://github.com/VAMSI129325/GREENCART/blob/86d6a99f9290529577e8db507a66167693be941b/Screenshot%202025-08-24%20140800.jpg)
 
-
+![image alt](https://github.com/VAMSI129325/GREENCART/blob/6dfac773e303bff0ff12bc139a7031b1831879d3/Screenshot%202025-08-24%20140819.jpg)
 
 
