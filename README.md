@@ -17,3 +17,52 @@ Greencart is a full-stack e-commerce web application built using the MERN stack.
 # Payment Page
 ![image alt](https://github.com/VAMSI129325/GREENCART/blob/5de8f017133b8753ba75dba3d90def1844ba651e/Screenshot%202025-08-24%20141006.jpg)
 
+# Project Structure
+
+Greencart/
+│
+├── backend/                  # Server-side (Node.js + Express)
+│   ├── config/               # Configuration files (DB, JWT, etc.)
+│   │   └── db.js             # MongoDB connection
+│   │   └── jwt.js            # JWT auth setup
+│   │
+│   ├── controllers/          # Business logic (Products, Users, Orders)
+│   │   └── productController.js
+│   │   └── userController.js
+│   │   └── orderController.js
+│   │
+│   ├── models/               # MongoDB Models (Schemas)
+│   │   └── Product.js
+│   │   └── User.js
+│   │   └── Order.js
+│   │
+│   ├── routes/               # Express Routes (API endpoints)
+│   │   └── productRoutes.js
+│   │   └── userRoutes.js
+│   │   └── orderRoutes.js
+│   │
+│   ├── middleware/           # Custom middleware
+│   │   └── authMiddleware.js
+│   │   └── errorMiddleware.js
+│   │
+│   ├── utils/                # Helper functions (payment, validators)
+│   │
+│   ├── server.js             # Entry point for backend
+│   └── package.json
+│
+├── frontend/                 # Client-side (React + Redux)
+│   ├── public/               # Static assets
+│   ├── src/
+│   │   ├── components/       # Reusable UI components (Navbar, Footer, etc.)
+│   │   ├── pages/            # Page components (Home, Cart, Checkout, etc.)
+│   │   ├── features/         # Redux slices (products, cart, user, orders)
+│   │   ├── services/         # API calls (axios)
+│   │   ├── App.js            # Main App component
+│   │   ├── store.js          # Redux store configuration
+│   │   └── index.js          # React entry point
+│   └── package.json
+│
+├── .env                      # Environment variables (Mongo URI, JWT secret, etc.)
+├── .gitignore
+├── README.md
+└── package.json              # Root package file (if using concurrently)
