@@ -17,29 +17,3 @@ Greencart is a full-stack e-commerce web application built using the MERN stack.
 # Payment Page
 ![image alt](https://github.com/VAMSI129325/GREENCART/blob/5de8f017133b8753ba75dba3d90def1844ba651e/Screenshot%202025-08-24%20141006.jpg)
 
-# Project Structure
-
-greencart/
-│
-├── frontend/ # React + Redux Frontend
-│ ├── public/
-│ └── src/
-│ ├── components/ # Reusable UI Components
-│ ├── pages/ # Pages (Home, Cart, Checkout, etc.)
-│ ├── features/ # Redux slices (products, cart, users)
-│ ├── services/ # API calls
-│ ├── App.js
-│ └── index.js
-│
-├── backend/ # Node.js + Express Backend
-│ ├── controllers/ # Business Logic
-│ ├── models/ # MongoDB Schemas
-│ ├── routes/ # API Routes
-│ ├── middleware/ # Auth & Error Handling
-│ ├── config/ # DB & JWT Config
-│ └── server.js
-│
-├── .env # Environment Variables
-├── .gitignore
-├── README.md
-└── package.json
