@@ -19,50 +19,27 @@ Greencart is a full-stack e-commerce web application built using the MERN stack.
 
 # Project Structure
 
-Greencart/
+greencart/
 │
-├── backend/                  # Server-side (Node.js + Express)
-│   ├── config/               # Configuration files (DB, JWT, etc.)
-│   │   └── db.js             # MongoDB connection
-│   │   └── jwt.js            # JWT auth setup
-│   │
-│   ├── controllers/          # Business logic (Products, Users, Orders)
-│   │   └── productController.js
-│   │   └── userController.js
-│   │   └── orderController.js
-│   │
-│   ├── models/               # MongoDB Models (Schemas)
-│   │   └── Product.js
-│   │   └── User.js
-│   │   └── Order.js
-│   │
-│   ├── routes/               # Express Routes (API endpoints)
-│   │   └── productRoutes.js
-│   │   └── userRoutes.js
-│   │   └── orderRoutes.js
-│   │
-│   ├── middleware/           # Custom middleware
-│   │   └── authMiddleware.js
-│   │   └── errorMiddleware.js
-│   │
-│   ├── utils/                # Helper functions (payment, validators)
-│   │
-│   ├── server.js             # Entry point for backend
-│   └── package.json
+├── frontend/ # React + Redux Frontend
+│ ├── public/
+│ └── src/
+│ ├── components/ # Reusable UI Components
+│ ├── pages/ # Pages (Home, Cart, Checkout, etc.)
+│ ├── features/ # Redux slices (products, cart, users)
+│ ├── services/ # API calls
+│ ├── App.js
+│ └── index.js
 │
-├── frontend/                 # Client-side (React + Redux)
-│   ├── public/               # Static assets
-│   ├── src/
-│   │   ├── components/       # Reusable UI components (Navbar, Footer, etc.)
-│   │   ├── pages/            # Page components (Home, Cart, Checkout, etc.)
-│   │   ├── features/         # Redux slices (products, cart, user, orders)
-│   │   ├── services/         # API calls (axios)
-│   │   ├── App.js            # Main App component
-│   │   ├── store.js          # Redux store configuration
-│   │   └── index.js          # React entry point
-│   └── package.json
+├── backend/ # Node.js + Express Backend
+│ ├── controllers/ # Business Logic
+│ ├── models/ # MongoDB Schemas
+│ ├── routes/ # API Routes
+│ ├── middleware/ # Auth & Error Handling
+│ ├── config/ # DB & JWT Config
+│ └── server.js
 │
-├── .env                      # Environment variables (Mongo URI, JWT secret, etc.)
+├── .env # Environment Variables
 ├── .gitignore
 ├── README.md
-└── package.json              # Root package file (if using concurrently)
+└── package.json
